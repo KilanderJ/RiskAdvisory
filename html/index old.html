@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="en">
+   
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk Advisory homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <a class="navbar-brand justify-content-start" href="#">Risk Advisory</a>
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownModels" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownModels">
+            <a class="dropdown-item" href="#fixedIncomeModelsId">Fixed Income Models</a>
+            <a class="dropdown-item" href="#fxModelsId">FX Models</a>
+            <a class="dropdown-item" href="#derivativeModelsId">Derivative Models</a>
+            <a class="dropdown-item" href="#assetModelsId">Asset Models</a>
+            <a class="dropdown-item" href="#structuredModelsId">Structured Product Models</a>
+            <a class="dropdown-item" href="#tailoredModelsId">Tailored Models</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExamples" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownExamples">
+            <a class="dropdown-item" href="#fixedIncomeExamplesBtn" id="fixedIncomeExamplesMenuLink">Fixed Income</a>
+            <a class="dropdown-item" href="#savingsBanksExamplesBtn" id="savingsBanksExamplesMenuLink">Savings Banks</a>
+            <a class="dropdown-item" href="#assetExamplesBtn" id="assetExamplesMenuLink">Assets</a>
+            <a class="dropdown-item" href="#fxExamplesBtn" id="fxExamplesMenuLink">FX</a>
+            <a class="dropdown-item" href="#derivativeExampelsBtn" id="derivativeExamplesMenuLink">Derivative</a>
+            <a class="dropdown-item" href="#otherExamplesBtn" id="otherExamplesMenuLink">Other</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTools">
+            <a class="dropdown-item" href="#fixedIncomeToolsId" id="fixedIncomeToolsMenuLink">Fixed Income</a>
+            <a class="dropdown-item" href="#fxToolsId" id="fxToolsMenuLink">FX</a>
+            <a class="dropdown-item" href="#derivativeToolsId" id="derivativeToolsMenuLink">Derivatives</a>
+            <a class="dropdown-item" href="#otherToolsId" id="otherToolsMenuLink">Utilities</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExamples" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Regulatory</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownExamples">
+            <a class="dropdown-item" href="#lcrQA">LCR</a>
+            <a class="dropdown-item" href="#riskWeightsQA">Risk Weights</a>
+            <a class="dropdown-item" href="#ifrs9QA">IFRS9 and Hedge Accounting</a>
+            <a class="dropdown-item" href="#solvencyIIQA">Solvency II</a>
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    
+    </div>
+  </nav>
+
+  <div id = "riskadvisoryjumbotrone">
+
+    <div class = "row">
+
+      <div class = "col-9">
+        <div id ="jumbotrone-text">
+          <h2>What we do</h2>
+          <div id ="jumbotrone-sub-text">Risk Advisory provides quantitative expertise in matters relating to Risk Management and Asset Allocation to all types and sizes of clients across all regions.
+          <br>
+          Please feel free to contact us in any matter pertaining to Risk or Quant Analysis - we are here to help!
+          <br><br>
+          <b>On this page you can easily access Models, Tools and Example presentations as well as some key information on regulatory issues.</b>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-3">
+        <div id ="learn-more-box">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-toggle="dropdown">Explore!
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Models<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="test" href="#">Fixed Income Models<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Credit Standardised</a></li>
+                      <li><a href="#">Credit Customised</a></li>
+                      <li><a href="#">Bloomberg Valuation</a></li>
+                      <li><a href="#">Savings Bank Model</a></li>
+                      <li><a href="#">Coco Bond Model</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="test" href="#">FX Models<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">FX Standardised</a></li>
+                      <li><a href="#">FX Customised</a></li>
+                      <li><a href="#">FX Product Sheets</a></li>
+                      <li><a href="#">FX M&A</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Presentations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Fixed Income</a></li>
+                  <li><a tabindex="-1" href="#">FX</a></li>
+                  <li><a tabindex="-1" href="#">Derivatives</a></li>
+                  <li><a tabindex="-1" href="#">Other</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Tools<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Fixed Income</a></li>
+                  <li><a tabindex="-1" href="#">FX</a></li>
+                  <li><a tabindex="-1" href="#">Derivatives</a></li>
+                  <li><a tabindex="-1" href="#">Other</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">Regulations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Risk Weights</a></li>
+                  <li><a tabindex="-1" href="#">LCR</a></li>
+                  <li><a tabindex="-1" href="#">IFRS9</a></li>
+                  <li><a tabindex="-1" href="#">Solvency II</a></li>
+                  <li><a tabindex="-1" href="#">Other</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+    
+    <div class = "container main-box">
+      
+      <img src="../images/models icon - single white cog wheel.png" alt="Models icon" class="main-box-icon">
+
+      <div class = "row">
+        <div class = "col-12">
+          <div class = "text-center main-box-content">
+            <h3>Models</h3>  
+            <hr>
+            <p>The Risk Advisory models enables you to quickly and easily produce professional looking presentation material and risk reports.<br>For existing clients we also provide automised (standardised) daily risk reports directly available with no input required.</p>  
+          </div>
+        </div>
+      </div>
+      
+      <div class ="main-sub-box">
+
+        <div class ="row" >
+
+          <!--Fixed Income Models-->
+          <div class = "col-4" id = "fixedIncomeModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Fixed Income Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Fixed Income Models provides analysis of risk and return in bond portfolios. Analysis specific to Savings Banks are also available.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-6">
+                      <a href="#" class="btn btn-primary btn-block">Standardised</a>
+                    </div>
+
+                    <div class = "col-6">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="creditModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="creditModelsButton">
+                          <a class="dropdown-item" href="#">Credit Standardised</a>
+                          <a class="dropdown-item" href="../html/creditmodelcustomised.html">Credit Customised</a>
+                          <a class="dropdown-item" href="#">Bloomberg Valuation</a>
+                          <a class="dropdown-item" href="#">Savings Bank Model</a>
+                          <a class="dropdown-item" href="#">Coco Bond Model</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--FX Models-->
+          <div class = "col-4" id = "fxModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">FX Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">FX Models provides analysis and illustrations of risk in commercial FX-exposure. Product sheets and other models are also available.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-6">
+                      <a href="#" class="btn btn-primary btn-block">Standardised</a>
+                    </div>
+
+                    <div class = "col-6">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="fxModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="fxModelsButton">
+                          <a class="dropdown-item" href="#">FX Standardised</a>
+                          <a class="dropdown-item" href="#">FX Customised</a>
+                          <a class="dropdown-item" href="#">Product Sheets</a>
+                          <a class="dropdown-item" href="#">FX Risk M&A</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Derivative Models-->
+          <div class = "col-4" id = "derivativeModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Derivative Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Derivative Models provides a holistic view of interest rate risk in loans and derivatives for a Corporate client.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-6">
+                      <a href="#" class="btn btn-primary btn-block">Standardised</a>
+                    </div>
+
+                    <div class = "col-6">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="derivativesModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="derivativesModelsButton">
+                          <a class="dropdown-item" href="#">Derivatives Standardised</a>
+                          <a class="dropdown-item" href="#">Derivatives Customised</a>
+                          <a class="dropdown-item" href="#">Swap Report 2-pager</a>
+                          <a class="dropdown-item" href="#">Product Sheets</a>
+                          <a class="dropdown-item" href="#">Hairy Graphs</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="main-sub-box">
+
+        <div class = "row">
+
+          <!--Asset Models-->
+          <div class = "col-4" id = "assetModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Asset Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Asset Models provides risk and return analysis of multi-asset portfolios including flexible portfolio optimization given desired asset universe and required constraints.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-12">
+                      <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle btn-block" type="button" id="assetModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="assetModelsButton">
+                          <a class="dropdown-item" href="#">Asset Portfolio Model</a>
+                          <a class="dropdown-item" href="#">Portfolio Optimization</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Structured Product Models-->
+          <div class = "col-4" id = "structuredModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Structured Product Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Evaluation and simulation of risk and return in structured products. Also includes risk classifications according to SPIS and optimizations of underlying assets.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-12">
+                      <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle btn-block" type="button" id="structuredModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="structuredModelsButton">
+                          <a class="dropdown-item" href="#">Structured Product Simulator</a>
+                          <a class="dropdown-item" href="#">Risk classification SPIS-methodolgy</a>
+                          <a class="dropdown-item" href="#">Basket optimization</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Tailored Models-->
+          <div class = "col-4" id = "tailoredModelsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Tailored Models</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Risk, performance and valuation reports tailored to the specific needs of certain clients. Includes currently Svenska Spel and Landstinget Jönköping.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-12">
+                      <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle btn-block" type="button" id="tailoredModelsButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Models
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="tailoredModelsButton">
+                          <a class="dropdown-item" href="#">Performance Report Månadsklövern</a>
+                          <a class="dropdown-item" href="#">Valuation Report LTJ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Presentations and Examples-->
+    <div class = "container main-box">
+      
+      <img src="../images/icon presentation.png" alt="Models icon" class="main-box-icon">
+
+      <div class = "row">
+        <div class = "col-12">
+          <div class = "text-center main-box-content">
+            <h3>Presentations and Examples</h3>  
+            <hr>
+            <p>Please click on each box below to access historial presentations, risk reports and various analysis relating to each product area.<br>This includes both reports which are directly produced by the Risk Advisory models as well as more bespoke material.<br>
+            </p>  
+          </div>
+        </div> 
+      </div>
+
+      <div class = "main-sub-box">
+        <div class = "row">
+          <div class = "col-4">
+            <h3 class = "text-center">Category</h3>
+            <hr>
+
+            <!--Fixed income model button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#fixedIncomeExamplesModel" id = "fixedIncomeExamplesBtn">Fixed Income</button>
+            </div>
+            <!--Fixed Income modal -->
+            <div class="modal fade" id="fixedIncomeExamplesModel" tabindex="-1" role="dialog" aria-labelledby="fixedIncomeModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="fixedIncomeModalScrollableTitle">Fixed Income Examples and Presentations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Standardised Credit Model with 1-page PB-report</a></li>
+                      <li class="list-group-item"><a href="#">Selection of slides from Customised Credit Model</a></li>
+                      <li class="list-group-item"><a href="#">Risk and return analysis of High Yield Fund.</a></li>
+                      <li class="list-group-item"><a href="#">Portfolio optimization given policy</a></li>
+                      <li class="list-group-item"><a href="#">Barbell strategies in credit markets</a></li>
+                      <li class="list-group-item"><a href="#">Education material on credit markets and portfolio construction</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Savings bank modal button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#savingsBankExamplesModel" id = "savingsBanksExamplesBtn">Savings Banks</button>
+            </div>
+
+            <!--Savings Bank modal -->
+            <div class="modal fade" id="savingsBankExamplesModel" tabindex="-1" role="dialog" aria-labelledby="savingsBanksModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="savingsBanksModalScrollableTitle">Savings Banks Examples and Presentations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Savings Bank model for Net Interest Income</a></li>
+                      <li class="list-group-item"><a href="#">Standard Portfolio Report for a Savings bank</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of NII and portfolio for Savings Bank</a></li>
+                      <li class="list-group-item"><a href="#">Education material on portfolio and risk concepts</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Assets modal button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#assetExamplesModel" id = "assetExamplesBtn">Assets</button>
+            </div>
+
+            <!--Assets modal -->
+            <div class="modal fade" id="assetExamplesModel" tabindex="-1" role="dialog" aria-labelledby="assetModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="assetModalScrollableTitle">Asset Analysis Presentations and Examples</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Example of output from Asset Portfolio Model</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of risk and return in multi-asset portfolio</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of risk and return in equity portfolio</a></li>
+                      <li class="list-group-item"><a href="#">Output from Portfolio Optimization model</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--FX modal button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#fxExamplesModel" id = "fxExamplesBtn">FX</button>
+            </div>
+
+            <!--FX modal -->
+            <div class="modal fade" id="fxExamplesModel" tabindex="-1" role="dialog" aria-labelledby="fxModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="fxModalScrollableTitle">FX Presentations and Examples</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Standardised FX-analysis for SME client</a></li>
+                      <li class="list-group-item"><a href="#">Standardised FX-analysis for MC client</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of FX-Risk in Net-Debt/EBITDA</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of FX-risk coupled with commodity exposure</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of hedging strategies for an equity portfolio</a></li>
+                      <li class="list-group-item"><a href="#">Optimization of hedging strategy under mean-reversion.</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of FX-risk under currency clauses (valutaklausuler)</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--Derivatives modal button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#derivativesExamplesModel" id = "derivativeExamplesBtn">Derivatives</button>
+            </div>
+
+            <!--Derivatives modal -->
+            <div class="modal fade" id="derivativesExamplesModel" tabindex="-1" role="dialog" aria-labelledby="derivativesModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="derivativesModalScrollableTitle">Derivatives Presentations and Examples</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Report from Standardised Derivative Model</a></li>
+                      <li class="list-group-item"><a href="#">Report from Customised Debt And Derivative Model</a></li>
+                      <li class="list-group-item"><a href="#">Report from Swap 2-pager model</a></li>
+                      <li class="list-group-item"><a href="#">Example output from product sheet model</a></li>
+                      <li class="list-group-item"><a href="#">Analysis of risk in ICR for a Real Estate Client</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Other modal button-->
+            <div class = "btn-examples">
+            <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#otherExamplesModel" id = "otherExamplesBtn">Other</button>
+            </div>
+
+            <!--Other modal -->
+            <div class="modal fade" id="otherExamplesModel" tabindex="-1" role="dialog" aria-labelledby="otherModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-box">
+                    <h5 class="modal-title" id="otherModalScrollableTitle">Other Useful Presentations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-group list-group-flush modal-list">
+                      <li class="list-group-item"><a href="#">Peer comparison of key ratios for Real Estate Clients</a></li>
+                      <li class="list-group-item"><a href="#">Credit scoring model explained</a></li>
+                      <li class="list-group-item"><a href="#">Template for FX-policy</a></li>
+                      <li class="list-group-item"><a href="#">Template for investment policy</a></li>
+                      <li class="list-group-item"><a href="#">Template for Interest Rate Risk hedging policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class = "col-8">
+            <h3 class = "text-center">Examples of Presentations and Other Market Material</h3>
+            <hr>
+            <div class="bd-example">
+              <div id="carouselExamples" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExamples" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExamples" data-slide-to="1"></li>
+                  <li data-target="#carouselExamples" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="2000">
+                    <img src="../images/Barbellstrategies.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Barbell Strategies in Credits</h5>
+                      <p>Generic presenation for Barbell Strategies in Credit Portfolios</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="../images/Interest rate risk ICR.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Risk Analysis of ICR</h5>
+                      <p>Bespoke Risk and Scenario Analysis of ICR for Real Estate client</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <img src="../images/Portfolio Analysis multi-asset.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bespoke Analysis of Multi-Asset Portfolio</h5>
+                      <p>Bespoke analysis of asset portfolio for Insurance Company</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExamples" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExamples" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <!--TOOLS-->
+    <div class = "container main-box">
+      
+      <img src="../images/icon tools.png" alt="Tools icon" class="main-box-icon">
+
+      <div class = "row">
+        <div class = "col-12">
+          <div class = "text-center main-box-content">
+            <h3>Tools</h3>  
+            <hr>
+            <p>Tools are quick and easy to use excel-based applications which renders charts, graphs, fetches Blomberg data and much more.<br> Please click on each category below to expand the content under each header.</p>
+            </p>  
+          </div>
+        </div> 
+      </div>
+
+      <div class = "main-sub-box">
+        
+        <div class = "row">
+
+          <div class = "col-2"></div>
+
+          <!--Fixed Income Tools-->
+          <div class = "col-4" id = "fixedIncomeToolsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">FI / Credit Tools</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Tools for graphing swap curves, LCR-calcualtions, break-even rate calculations, mak-whole pricing and more.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-12">
+
+                      <!--Tools fixed Income modal button-->
+                      <div class = "btn-examples">
+                      <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal" data-target="#fixedIncomeToolsModal" id="fixedIncomeToolsBtn">Fixed Income / Credit</button>
+                      </div>
+
+                      <!--Tools fixed income modal -->
+                      <div class="modal fade" id="fixedIncomeToolsModal" tabindex="-1" role="dialog" aria-labelledby="fixedIncomeToolsModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-box">
+                              <h5 class="modal-title" id="fixedIncomeToolsModalScrollableTitle">Fixed Income & Credit Tools</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul class="list-group list-group-flush modal-list">
+                                <li class="list-group-item">Application for bond bookings<a href="#"></a></li>
+                                <li class="list-group-item"><a href="#">Tool for make-whole price calculations</a></li>
+                                <li class="list-group-item"><a href="#">Tools for calculation of of LCR amount</a></li>
+                                <li class="list-group-item"><a href="#">Graphing of current and historical swap curves</a></li>
+                                <li class="list-group-item"><a href="#">Estimated credit spread matrix by rating and tenor</a></li>
+                                <li class="list-group-item"><a href="#">Calculation of break-even rates over 1y: fixed vs float</a></li>
+                                <li class="list-group-item"><a href="#">Simple market risk calculation based on credit spread risk</a></li>
+                                <li class="list-group-item"><a href="#">Historical performance of bond portfolio</a></li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--FX Tools-->
+          <div class = "col-4" id = "fxToolsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">FX Tools</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Tools for fetching historical payment flows of an existing client over an historical time period, confidence intervals and more.</p>
+                    
+                  <div class = "row">  
+                    <div class = "col-12">
+
+                      <!--FX modal button-->
+                      <div class = "btn-examples">
+                      <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#fxToolsModal" id="fxToolsBtn">FX</button>
+                      </div>
+
+                      <!--Tools fixed income modal -->
+                      <div class="modal fade" id="fxToolsModal" tabindex="-1" role="dialog" aria-labelledby="fxToolsModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-box">
+                              <h5 class="modal-title" id="fxToolsModalScrollableTitle">FX Tools</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul class="list-group list-group-flush modal-list">
+                                <li class="list-group-item"><a href="#">Historical monthly FX-payment flows for and existing client</a></li>
+                                <li class="list-group-item"><a href="#">Risk cones for FX based on volatility or historical mean-reversion</a></li>
+                                <li class="list-group-item"><a href="#">Backtest of mean-reversion hedging strategy</a></li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class ="col-2"></div>
+
+        </div>
+
+        <br>
+
+        <div class = "row">
+
+          <div class = "col-2"></div>
+
+          <!--Fixed Income Tools-->
+          <div class = "col-4" id = "derivativeToolsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Derivative Tools</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Tools plotting historical swap and forward curves, optimal restructuring of swaps, visualisation of payment flows and more.</p>
+                  
+                  <div class = "row">
+                    
+                    <div class = "col-12">
+
+                      <!--Tools derivatives modal button-->
+                      <div class = "btn-examples">
+                      <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#derivativesToolsModal" id="derivativeToolsBtn">Derivatives</button>
+                      </div>
+
+                      <!--Tools derivatives modal -->
+                      <div class="modal fade" id="derivativesToolsModal" tabindex="-1" role="dialog" aria-labelledby="derivativesToolsModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-box">
+                              <h5 class="modal-title" id="derivativesToolsModalScrollableTitle">Interest Rate Derivative Tools</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul class="list-group list-group-flush modal-list">
+                                <li class="list-group-item"><a href="#">Optimal restructuring of swaps</a></li>
+                                <li class="list-group-item"><a href="#">Historical plotting of swaps and forwards curves</a></li>
+                                <li class="list-group-item"><a href="#">Historic evaluation of cap prices</a></li>
+                                <li class="list-group-item"><a href="#">Risk cones for 3M tenor based on implied cap volas</a></li>
+                                <li class="list-group-item"><a href="#">Risk analysis of ICR ratio in different interest rate scenarios</a></li>
+                                <li class="list-group-item">Visualisation of cash flows in pacakge of swaps/caps/floors<a href="#"></a></li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Other Tools-->
+          <div class = "col-4" id = "otherToolsId">
+            <div class="card text-center">
+              <h5 class="card-header main-sub-box-header">Other utilities</h5>
+                <div class="card-body">
+
+                  <p class="card-text">Tools for retrieving data from BBG and plotting, conversion of date formats, sending of emails from Excel and more.</p>
+                    
+                  <div class = "row">
+                      
+                    <div class = "col-12">
+
+                      <!--Other modal button-->
+                      <div class = "btn-examples">
+                      <button type="button" class = "btn btn-secondary btn-block btn-lg" data-toggle="modal"  data-target="#otherToolsModal" id="otherToolsBtn">Other</button>
+                      </div>
+
+                      <!--Other fixed income modal -->
+                      <div class="modal fade" id="otherToolsModal" tabindex="-1" role="dialog" aria-labelledby="otherToolsModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header-box">
+                              <h5 class="modal-title" id="otherToolsModalScrollableTitle">Other useful tools</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul class="list-group list-group-flush modal-list">
+                                <li class="list-group-item"><a href="#">Retrieve historical data from BBG</a></li>
+                                <li class="list-group-item"><a href="#">Date conversion function in excel</a></li>
+                                <li class="list-group-item"><a href="#">Email application</a></li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class ="col-2"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Tools-->
+    <div class = "container main-box">
+      
+      <img src="../images/icon regulations.png" alt="Regulations icon" class="main-box-icon">
+
+      <div class = "row">
+        <div class = "col-12">
+          <div class = "text-center main-box-content">
+            <h3>Regulatory Issues</h3>  
+            <hr>
+            <p>Here we list some common Q&A related to regulatory concerns which are pertinent when advising clients in matters of hedging decisions and/or portfolio reallocations. Please click on each question below to see the related answer/discussion.</p>
+            </p>  
+          </div>
+        </div> 
+      </div>
+
+      <div class = "main-sub-box">
+        
+        <!--LCR-->
+        <h4 id ="lcrQA">Questions related to LCR</h4>
+
+        <div class="accordion" id="accordionTools">
+          
+          <!--Q1-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q1LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q1LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  What does the general rules for classification of LCR assets look like?
+                </button>
+              </h2>
+            </div>
+
+            <div id="q1LCRAnswer" class="collapse" aria-labelledby="q1LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                LCR assets can be divided into three main categories to which different hair-cuts are applied
+                <ul>
+                  <li>Level 1A - Haircut 0%: Coins and physical money, exposures to central banks within EEA or a national government, exposures to municipalitites or multilateral banks, and exposures which have explicit guarantees from any of these.</li>
+                  <li>Level 1B - haircut 7%: Covered bonds which have a minimum issued amount of 500 MEUR and AAA-rating.</li>
+                  <li>Level 2A - haircut 15%: Covered bonds which have a minimum issued amount of 250 MEUR and AAA-rating.</li>
+                  <li>Level 2B - haircut 50%: Bonds issued by Corporates with a minimum issued amount of 250 MEUR and minimum official rating of BBB-.</li>
+                </ul>
+                Of the total amount used for liquidity coverage a minimum of 30% must be made up of Level 1A assets, 1B must not acount for more than 70% and Level 2A + 2B must not account for more than 40%.   
+              </div>
+            </div>
+          </div>
+
+          <!--Q2-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q2LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q2LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  What does the restrictions on 250 MEUR and 500 MEUR mean for Level 1B, 2A and 2B assets when converted into SEK?
+                </button>
+              </h2>
+            </div>
+
+            <div id="q2LCRAnswer" class="collapse" aria-labelledby="q2LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                ESMA has said in one of there Q&As that the appropriate FX-conversion rate to use should be the one which applied on the latest issue date of the bond.    
+              </div>
+            </div>
+          </div>
+
+          <!--Q3-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q3LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q3LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  Does Öresundskonsortiet qualify as a Level 1A asset?
+                </button>
+              </h2>
+            </div>
+
+            <div id="q3LCRAnswer" class="collapse" aria-labelledby="q3LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                Yes, Öresundskonsortiet has an explicit guarantee from the Swedish and Danish goverments and therefore qualify as a Level 1A asset.    
+              </div>
+            </div>
+          </div>
+
+          <!--Q3-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q4LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q4LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  Does large hybrid bond issues with size more than 250 MEUR, i.e.Telia 2020-10-04, qualify as LCR assets? 
+                </button>
+              </h2>
+            </div>
+
+            <div id="q4LCRAnswer" class="collapse" aria-labelledby="q4LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                No, they do not. There is a requirement that maximum possible maturity should be less than 10 years and this does not apply for most hybrid bonds which have a final call date much further away.    
+              </div>
+            </div>
+          </div>
+
+          <!--Q5-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q5LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q5LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  Can certificates issued by municipalities qualify as an LCR asset? 
+                </button>
+              </h2>
+            </div>
+
+            <div id="q5LCRAnswer" class="collapse" aria-labelledby="q5LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                Yes, certificates issued by municipalities qualify as Level 1A assets even though they are not listed on an exchange. There isa general requirement that qualifying assets should be able to be converted into cash any time during a stressed 30 day period either through a direct sale or through a repo agreement. Certificated can not be repoed in the Riksbank but should be able to qualify anyway as they can be sold bilaterally and coverted to cash.  
+              </div>
+            </div>
+          </div>
+
+          <!--Q6-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q6LCRHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q6LCRAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  What requirements does the Riksbank have to make a bond serve as a security for a intraday loan? 
+                </button>
+              </h2>
+            </div>
+
+            <div id="q6LCRAnswer" class="collapse" aria-labelledby="q6LCRHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                There are a number of formal requirements and they are listed in Bilaga H4 on the Riksbank webpage: <a href="https://www.riksbank.se/globalassets/media/rix/svenska/2018/villkor-for-rix-och-penningpolitiska-instrument---bilaga-h4---anvisningar-sakerheter.pdf" target="_blank">Bilaga H4</a>. However the most important are:
+                <ul>
+                  <li>Lowest official rating of AA- from either S&P, Moody or Fitch</li>
+                  <li>Listed on a regulated market in an approved jurisdiction</li>
+                  <li>Outstanding issued amount of at least 100 MSEK</li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <br>
+
+        <!--RISK WEIGHTS-->
+        <h4 id ="riskWeightsQA">Questions related to Basel III Risk Weights</h4>
+        <div class="accordion" id="accordionTools">
+          
+          <!--Q1-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q1RiskWeightsHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q1RiskWeightsAnswer" aria-expanded="true" aria-controls="collapseOne">
+                  What does the general rules for risk weighting on exposures look like under Basel III using the foundational approach (Schablonmetoden)?
+                </button>
+              </h2>
+            </div>
+
+            <div id="q1RiskWeightsAnswer" class="collapse" aria-labelledby="q1RiskWeightsHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                LCR assets can be divided into three main categories to which different hair-cuts are applied
+                <ul>
+                  <li>Level 1A - Haircut 0%: Coins and physical money, Deposits at the Riksbank, assets issued by Swedish municipalities, multilateral banks, the Swedish government and aasets which have explicit guarantees from any of these counterparties.</li>
+                  <li>Level 1B - haircut 7%: Covered bonds which have a minimum issued amount of 500 MEUR and AAA/AA-rating.</li>
+                  <li>Level 2A - haircut 15%: Covered bonds which have a minimum issued amount of 250 MEUR and AAA/AA-rating.</li>
+                  <li>Level 2B - haircut 50%: Bonds issued by Corporates with a minimum issued amount of 250 MEUR and equities which fulfill the following criteria:...</li>
+                </ul>
+                Of the total amount used for liquidity coverage a minimum of 30% must be made up of Level 1A assets, 1B must not acount for more than 70% and Level 2A + 2B must not account for more than 40%.   
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <br>
+
+        <!--IFRS9 and Hedge Accounting-->
+        <h4 id ="ifrs9QA">Questions related to IFRS9 and Hedge Accounting</h4>
+        <div class="accordion" id="accordionTools">
+          
+          <!--Q1-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q1Ifrs9Header">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q1Ifrs9Answer" aria-expanded="true" aria-controls="collapseOne">
+                  What does IFRS9 imply for Savings Banks?
+                </button>
+              </h2>
+            </div>
+
+            <div id="q1Ifrs9Answer" class="collapse" aria-labelledby="q1Ifrs9Header" data-parent="#accordionTools">
+              <div class="card-body">
+                TBD   
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <br>
+
+        <!--Solvency II-->
+        <h4 id ="solvencyIIQA">Solvency II</h4>
+        <div class="accordion" id="accordionTools">
+          
+          <!--Q1-->
+          <div class="card">
+            <div class="card-header btn-tools-header" id="q1SolvencyIIHeader">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#q1SolvencyIIAnswer" aria-expanded="true" aria-controls="collapseOne">
+                How are interest rates stressed in the Market Risk submodule in Solvency II?  
+                </button>
+              </h2>
+            </div>
+
+            <div id="q1SolvencyIIAnswer" class="collapse" aria-labelledby="q1SolvencyIIHeader" data-parent="#accordionTools">
+              <div class="card-body">
+                TBD   
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class = "panel-footer">
+
+        <div class = "container-fluid">
+          
+          <div class = "row">
+            <div class = "col-12 text-center">
+              <p class = "panel-footer-header">
+                Please click the links below to send an email to any of us working in Risk Advisory.
+              </p>
+            </div>
+            <hr>            
+          </div>
+        
+          <div class = "row">
+
+            <div class = "col-3"></div>
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:johan.kilander@swedbank.se">Johan Kilander</a> 
+            </div>  
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:jonas.bostrom@swedbank.se">Jonas Boström</a> 
+            </div>
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:anna.heikilae@swedbank.se">Anna Heikkilae</a> 
+            </div>
+
+            <div class = "col-3"></div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+
+      /* Trigger for main explore button */
+      $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+
+      /*-------TRIGGER FUNCTIONS FOR EXAMPLES MODALS----*/
+
+      /* Trigger fixed income examples menu link */
+      $(document).ready(function(){
+        $('#fixedIncomeExamplesMenuLink').on("click", function(e){
+          $('#fixedIncomeExamplesBtn').trigger("click");
+        });  
+      });
+      
+      /* Trigger savings banks examples menu link */
+      $(document).ready(function(){
+        $('#savingsBanksExamplesMenuLink').on("click", function(e){
+          $('#savingsBanksExamplesBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger for asset examples menu link */
+      $(document).ready(function(){
+        $('#assetExamplesMenuLink').on("click", function(e){
+          $('#assetExamplesBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger for fx examples menu link */
+      $(document).ready(function(){
+        $('#fxExamplesMenuLink').on("click", function(e){
+          $('#fxExamplesBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger for derivative examples menu link */
+      $(document).ready(function(){
+        $('#derivativeExamplesMenuLink').on("click", function(e){
+          $('#derivativeExamplesBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger for other examples menu link */
+      $(document).ready(function(){
+        $('#otherExamplesMenuLink').on("click", function(e){
+          $('#otherExamplesBtn').trigger("click");
+        });  
+      });
+
+      /*-------TRIGGER FUNCTIONS FOR TOOLS MODALS----*/
+      
+      /* Trigger fixed income tools menu link */
+      $(document).ready(function(){
+        $('#fixedIncomeToolsMenuLink').on("click", function(e){
+          $('#fixedIncomeToolsBtn').trigger("click");
+        });  
+      });
+      
+      /* Trigger fx tools menu link */
+      $(document).ready(function(){
+        $('#fxToolsMenuLink').on("click", function(e){
+          $('#fxToolsBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger derivative tools menu link */
+      $(document).ready(function(){
+        $('#derivativeToolsMenuLink').on("click", function(e){
+          $('#derivativeToolsBtn').trigger("click");
+        });  
+      });
+
+      /* Trigger other tools menu link */
+      $(document).ready(function(){
+        $('#otherToolsMenuLink').on("click", function(e){
+          $('#otherToolsBtn').trigger("click");
+        });  
+      });
+
+    </script>
+
+  </body>

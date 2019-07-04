@@ -1,0 +1,49 @@
+/*Define tailored styles*/
+
+body {
+  	background-color: white;
+  	font-family: 'Pontano Sans', sans-serif;
+}
+
+
+.navbar-brand{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#riskadvisoryjumbotrone{
+
+	/* background-image: linear-gradient(to bottom right, #ff6600, #ff9900, #fff5e6); */
+	background-image: linear-gradient(to bottom right, #ff6600, white);
+	width: 100%;
+	height: 300px;
+	color: white;
+
+}
+
+#jumbotrone-main-header{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#jumbotrone-main-header hr{
+	width:100%;
+	border-width: 2px;
+	border-color: gray;
+}
+
+#jumbotrone-sub-text{
+	font-style: italic;
+}
+
+#quick-links-box hr{
+	width:100%;
+	border-width: 2px;
+	border-color: gray;
+}
+
+#quick-links-box{
+
+	margin-top:10px;
+	
+}
