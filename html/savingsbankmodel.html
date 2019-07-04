@@ -89,15 +89,24 @@
 
           <div class = "col-12" id = "models-page-box-card">
             <div class="card">
-              <h3 class="card-header models-page-box-header text-center">Customised Credit Portfolio Model</h3>
+              <h3 class="card-header models-page-box-header text-center">Savings Bank Model</h3>
                 <div class="card-body">
 
                   <p class="card-text">
                     <h4>Description</h4>
-                    The Customised Credit Portfolio Model allows you to run an in-depth analysis on a bond portfolio based on your choice of reports. The reports to run are selected on the Settings page of the indata template. For Private Banking clients we suggest to run only the 'PB-report' and for Financial Institutions (e.g. Savings Banks) we suggest to run the 'Periodic Savings Bank-report'. The analysis provides things such as yield to maturity, allocations over ratings and sectors, duration, stress test of rates and credit spreads, scenario analysis, VaR-calculations and much more.<br><br>
+                    The Saving Bank Model provides an analysis of the interest rate risk in the Net Interest Income based on
+                    <ul>
+                      <li>Current commercial lending portfolio</li>
+                      <li>Current commercial borrowing portfolio</li>
+                      <li>Financial investment portfolio</li>
+                      <li>Interest rate derivative portfolio (if any)</li>
+                      <li>Financial borrowing (if any)</li>
+                    </ul>
+                  The model is based on historical sensitivity of lending rates and borrowing rates with respect to STIBOR3M. Details of commercial lending portfolio is also provided along with comparison with financial lending portfolio. 
+                  <br><br>
                   <ul>
-                    <li>The 'Fill indata' tab below allows you to get instrument details for a bond portfolio. You must provide ISIN-codes to make this work.</li>
-                    <li>The 'Run Model' tab allows you to run the model and retrieve reports based on an indata sheet where all instrument details have been provided.</li>
+                    <li>The 'Fill indata' tab below allows you to get instrument details and current lending and borrowing portfolio. You must provide the name of the Savings Bank on the Settings page in the indata template and ISIN codes on the portfolio tab.</li>
+                    <li>The 'Run Model' tab allows you to run the model and retrieve a full report.</li>
                   </ul>
                     <a class="btn btn-secondary" href="#" role="button">Download a clean indata template</a>
                     <a class="btn btn-secondary" href="#" role="button">Example report</a>
@@ -106,21 +115,21 @@
                   
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="fill-tab-credit-portfolio" data-toggle="tab" href="#fill-form-credit-portfolio" role="tab" aria-controls="home" aria-selected="true">Fill indata</a>
+                        <a class="nav-link active" id="fill-tab-savings-bank" data-toggle="tab" href="#fill-form-savings-bank" role="tab" aria-controls="home" aria-selected="true">Fill indata</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="run-credit-portfolio-tab" data-toggle="tab" href="#run-form-credit-portfolio" role="tab" aria-controls="profile" aria-selected="false">Run Model</a>
+                        <a class="nav-link" id="run-savings-bank-tab" data-toggle="tab" href="#run-form-savings-bank" role="tab" aria-controls="profile" aria-selected="false">Run Model</a>
                       </li>
                     </ul>
 
                     <div class="tab-content" id="myTabContent">
 
-                      <div class="tab-pane fade show active" id="fill-form-credit-portfolio" role="tabpanel" aria-labelledby="fill-tab-credit-portfolio">
+                      <div class="tab-pane fade show active" id="fill-form-savings-bank" role="tabpanel" aria-labelledby="fill-tab-savings-bank">
 
                         <!--Fill form-->
                         <h4>Fill Indata Template</h4>
-                        This form allows you to fill instrument details of a bond portfolio. Instrument details are based on data provided by Bloomberg<br>
-                        Please make sure you have provided ISIN-codes before uploading your indata file.
+                        This form allows you to fill balance sheet data and instrument details financial bond portfolio. <br>
+                        Please make sure you have entered the name of the Savings Bank on the Settings page before uploading your file.
                         <hr>
 
                         <!--Run Model form-->
@@ -149,12 +158,6 @@
                           <input type="file" class="form-control-file" name="indatafile">
                         </div>
 
-                        
-                        <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input" name="runBidAskSpreads">
-                          <label class="form-check-label" for="runBidAskSpreads">Include bid-ask spreads?</label>
-                        </div>
-
                         <br>
                         <button type="submit" class = "btn btn-secondary">Fill Indata</button> 
                         
@@ -162,48 +165,32 @@
                       
                       </div>
 
-                      <div class="tab-pane fade" id="run-form-credit-portfolio" role="tabpanel" aria-labelledby="run-credit-portfolio-tab">
+                      <div class="tab-pane fade" id="run-form-savings-bank" role="tabpanel" aria-labelledby="run-savings-bank-tab">
 
                         <h4>Run Model</h4>
-                        This form allows you to run the Credit Portfolio Model based on provided instrument details and selected reports of your choice.<br>
-                        Please make sure all bonds have all necessary instrument details before uploading the indata file and that you are selecting the correct indata file for uploading.
+                        This form allows you to run the Savings Bank Model based on provided balance sheet data and bond portfolio details in the indata sheet.<br>
                         <hr>
 
                         <!--Run Model form-->
-                        <form action="/models/interestrateriskmodel/main/interestrateriskmodelwrapper.m" enctype="multipart/form-data" method="post">
+                        <form action="/models/savingsbankmodel/main/savingsbankmodelwrapper.m" enctype="multipart/form-data" method="post">
                         
                         <div class = "form-group">   
                         <label for="userName">Please select user name from drop down list:</label>  
                           <select class = "form-control" name="userName">
                             <option value="" selected></option>
-                            <option value="Atilla Kucukgol">Atilla Kucukgol</option>
                             <option value="Caroline Hermansson">Caroline Hermansson</option>
-                            <option value="Gustav Axman">Gustav Axman</option>
-                            <option value="Johan Alsterlind">Johan Alsterlind</option>
+                            <option value="Gustav Axman">Gustav Axman</option>                       
                             <option value="Johan Kilander">Johan Kilander</option>
                             <option value="Jonas Bostrom">Jonas Bostrom</option>
                             <option value="Mats Petersson">Mats Petersson</option>
-                            <option value="Patrik Larsson">Patrik Larsson</option>
                             <option value="Kristina Ducic">Kristina Ducic</option>
                             <option value="Stefan Karlberg">Stefan Karlberg</option>
-                            <option value="Ulf Anstenius">Ulf Anstenius</option>
                           </select>
                         </div>
 
                         <div class="form-group">
                           <label for="indatafile">Select indata template:</label>
                           <input type="file" class="form-control-file" name="indatafile">
-                        </div>
-
-                        
-                        <div class="form-group form-check form-check-inline">
-                          <input type="checkbox" class="form-check-input" name="includeFrontPage">
-                          <label class="form-check-label" for="includeFrontPage">Include front page in PB-report?</label>
-                        </div>
-
-                        <div class="form-group form-check form-check-inline">
-                          <input type="checkbox" class="form-check-input" name="includeStressTest">
-                          <label class="form-check-label" for="includeStressTest">Include stress test in PB-report?</label>
                         </div>
                         
                         <br>
