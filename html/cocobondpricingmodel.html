@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+   
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk Advisory homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <a class="navbar-brand justify-content-start" href="../html/index.html">Risk Advisory</a>
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownModels" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownModels">
+            <a class="dropdown-item" href="../html/index.html#fixedIncomeModelsId">Fixed Income Models</a>
+            <a class="dropdown-item" href="../html/index.html#fxModelsId">FX Models</a>
+            <a class="dropdown-item" href="../html/index.html#derivativeModelsId">Derivative Models</a>
+            <a class="dropdown-item" href="../html/index.html#assetModelsId">Asset Models</a>
+            <a class="dropdown-item" href="../html/index.html#structuredModelsId">Structured Product Models</a>
+            <a class="dropdown-item" href="../html/index.html#tailoredModelsId">Tailored Models</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExamples" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Examples</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownExamples">
+            <a class="dropdown-item" href="../html/index.html#fixedIncomeExamplesBtn" id="fixedIncomeExamplesMenuLink">Fixed Income</a>
+            <a class="dropdown-item" href="../html/index.html#savingsBanksExamplesBtn" id="savingsBanksExamplesMenuLink">Savings Banks</a>
+            <a class="dropdown-item" href="../html/index.html#assetExamplesBtn" id="assetExamplesMenuLink">Assets</a>
+            <a class="dropdown-item" href="../html/index.html#fxExamplesBtn" id="fxExamplesMenuLink">FX</a>
+            <a class="dropdown-item" href="../html/index.html#derivativeExampelsBtn" id="derivativeExamplesMenuLink">Derivative</a>
+            <a class="dropdown-item" href="../html/index.html#otherExamplesBtn" id="otherExamplesMenuLink">Other</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTools">
+            <a class="dropdown-item" href="../html/index.html#fixedIncomeToolsId">Fixed Income</a>
+            <a class="dropdown-item" href="../html/index.html#fxToolsId">FX</a>
+            <a class="dropdown-item" href="../html/index.html#derivativeToolsId">Derivatives</a>
+            <a class="dropdown-item" href="../html/index.html#otherToolsId">Utilities</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExamples" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Regulatory</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownExamples">
+            <a class="dropdown-item" href="../html/index.html#lcrQA">LCR</a>
+            <a class="dropdown-item" href="../html/index.html#riskWeightsQA">Risk Weights</a>
+            <a class="dropdown-item" href="../html/index.html#ifrs9QA">IFRS9 and Hedge Accounting</a>
+            <a class="dropdown-item" href="../html/index.html#solvencyIIQA">Solvency II</a>
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    
+    </div>
+  </nav>
+
+  <div class = "model-page-box">
+
+    <div class = "container">
+      
+      <div class = "row">
+
+          <div class = "col-12" id = "models-page-box-card">
+            <div class="card">
+              <h3 class="card-header models-page-box-header text-center">CoCo Bond Pricing Model</h3>
+                <div class="card-body">
+
+                  <p class="card-text">
+                    <h4>Description</h4>
+                    The CoCo Bond Pricing Model is a flexible tool for pricing a Contingent Convertible Bond. The model is based on a Monte Carlo Simulation of the CET1 ratio and the price of the implicit option embedded in a CoCo bond is valued as the average value over all simulations. Given some known parameters the model can imply out the value of single unkonwn parameter such as price, CET1-volatility, trigger-level etc.<br>
+                    <a class="btn btn-secondary" href="#" role="button">Clean indata template</a>
+                    <a class="btn btn-secondary" href="#" role="button">Example report</a>
+                    <br><br>
+                       
+                        <!--Run Model form-->
+                        <form action="/models/cocobondpricingmodel/main/cocobondpricingmodelwrapper.m" enctype="multipart/form-data" method="post">
+                        
+                        <div class = "form-group">  
+                        <label for="userName">Please select user name from drop down list:</label>  
+                          <select class = "form-control" name="userName">
+                            <option value="" selected></option>
+                            <option value="Atilla Kucukgol">Atilla Kucukgol</option>
+                            <option value="Caroline Hermansson">Caroline Hermansson</option>
+                            <option value="Gustav Axman">Gustav Axman</option>
+                            <option value="Johan Alsterlind">Johan Alsterlind</option>
+                            <option value="Johan Kilander">Johan Kilander</option>
+                            <option value="Jonas Bostrom">Jonas Bostrom</option>
+                            <option value="Mats Petersson">Mats Petersson</option>
+                            <option value="Patrik Larsson">Patrik Larsson</option>
+                            <option value="Kristina Ducic">Kristina Ducic</option>
+                            <option value="Stefan Karlberg">Stefan Karlberg</option>
+                            <option value="Ulf Anstenius">Ulf Anstenius</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="indatafile">Select indata template:</label>
+                          <input type="file" class="form-control-file" name="indatafile">
+                        </div>
+
+                        <br>
+                        <button type="submit" class = "btn btn-secondary">Run Model</button> 
+                        
+                       </form>
+                      
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+          </div>
+
+    </div>
+  
+    <!--Footer-->
+    <div class = "panel-footer">
+
+        <div class = "container-fluid">
+          
+          <div class = "row">
+            <div class = "col-12 text-center">
+              <p class = "panel-footer-header">
+                Please click the links below to send an email to any of us working in Risk Advisory.
+              </p>
+            </div>
+            <hr>            
+          </div>
+        
+          <div class = "row">
+
+            <div class = "col-3"></div>
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:johan.kilander@swedbank.se">Johan Kilander</a> 
+            </div>  
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:jonas.bostrom@swedbank.se">Jonas Boström</a> 
+            </div>
+
+            <div class = "col-2 text-center mail-contact">
+              <a href="mailto:anna.heikilae@swedbank.se">Anna Heikkilae</a> 
+            </div>
+
+            <div class = "col-3"></div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+  </body>
